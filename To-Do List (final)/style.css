@@ -1,0 +1,91 @@
+body {
+    font-family: 'Tangerine';
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to right bottom, burlywood, orchid);
+    color: chocolate;
+}
+  
+#todo-container {
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: ivory;
+    border-radius: 30px;
+    box-shadow: 0 15px 30px #b446a2;
+    background-image: url(img/lilac-flowers-notebook.jpg);
+    background-size: cover;
+    background-position: center;
+}
+  
+#todo-form input[type="text"] {
+    font-family: 'Tangerine';
+    font-size: 100%;
+    width: 60%;
+    padding: 7px;
+    border: 2px solid peru;
+    border-radius: 20px;
+}
+  
+#todo-form button {
+    font-family: 'Tangerine';
+    font-size: 70%;
+    padding: 7px 13px;
+    background-color: chocolate;
+    color: midnightblue;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+}
+  
+#todo-form button:hover {
+    background-color: palevioletred;
+}
+  
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+  
+#todo-list li {
+    font-family: 'Tangerine';
+    font-size: 100%;
+    background-color: lavenderblush;
+    margin-top: 10px;
+    padding: 7px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#todo-list button{
+    font-family: 'Tangerine';
+    font-size: 90%;
+    background-color: chocolate;
+    color: midnightblue;
+    border: none;
+    border-radius: 10px;
+}
+
+.deleted {
+    animation: fadeOutSlideUp 1.5s forwards;
+    }
+  
+    @keyframes fadeOutSlideUp {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
+}
